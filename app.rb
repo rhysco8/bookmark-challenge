@@ -1,9 +1,10 @@
 require 'sinatra/base'
+require_relative 'lib/bookmark_manager'
 
 class BookmarkApp < Sinatra::Base
 
   get '/' do
-    @bookmarks = ["https://www.amazon.co.uk", "https://github.com"].join("<br>")
+    @bookmarks = BookmarkManager.new.all.join("<br>")
     erb :index
   end
 
