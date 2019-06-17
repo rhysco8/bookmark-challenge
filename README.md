@@ -15,11 +15,11 @@ You're going to build a bookmark manager. A bookmark manager is a website to mai
 
 ## Approach
 
-We broke the sepcifications down itno User stories and looked to implement each one before moving onto the next
+We broke the specifications down into User stories and looked to implement each one before moving onto the next
 
 ### Show a list of bookmarks
 
-```
+```sh
 As a user
 So that I can see that I have no bookmarks
 I want to open my bookmark manager and see that it is empty
@@ -30,3 +30,7 @@ I want to open my bookmark manager and see a list of bookmarks
 ```
 
 We broke this specification into 2 user stories to make it clear the behaviour we expect to see both when there are and aren't any bookmarks.
+
+Domain model:
+
+![Screenshot](https://imgur.com/a/YbTLrrm)
