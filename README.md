@@ -33,4 +33,4 @@ We broke this specification into 2 user stories to make it clear the behaviour w
 
 Domain model:
 
-![Screenshot](https://imgur.com/a/YbTLrrm.png)
+![Screenshot](https://www.dropbox.com/s/15w0lf32z0jxwnz/bookmark_domain_model.png?dl=0)
