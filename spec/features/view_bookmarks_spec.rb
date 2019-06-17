@@ -10,8 +10,9 @@ feature 'view bookmarks list' do
 
   scenario 'displays default list of bookmarks' do
     visit('/')
-    expect(page).to have_content "https://www.amazon.co.uk"
-    expect(page).to have_content "https://github.com"
+    expect(page).to have_content "http://www.makersacademy.com"
+    expect(page).to have_content "http://www.google.com"
+    expect(page).to have_content "http://www.destroyallsoftware.com"
   end
 
 end

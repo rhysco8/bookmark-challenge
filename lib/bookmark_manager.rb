@@ -1,10 +1,15 @@
+require 'pg'
+
 class BookmarkManager
 
   def initialize
-    @bookmarks = ["https://www.amazon.co.uk", "https://github.com"]
+    @bookmarks = []
   end
 
   def all
-    @bookmarks
+    con = PG.connect( dbname: 'bookmark_manager' )
+    results = con.exec( "SELECT url FROM bookmarks" )
+    results.map { |bookmarks| bookmarks['url'] }
   end
+
 end
